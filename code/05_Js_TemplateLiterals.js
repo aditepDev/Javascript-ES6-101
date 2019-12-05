@@ -2,7 +2,7 @@
 
 // แบบเดิม
 
-const name="top",last="campira",city="udontani"
+const name="aditep",last="campira",city="udonthani"
 
 
 const all = 'name'+name+'last'+last+'\
