@@ -3,3 +3,4 @@
 # NEW
     51219.01 info=> arrow function
     51219.02 update readme show info
+    61219.01 update info v0.1f
