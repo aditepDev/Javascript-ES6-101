@@ -40,6 +40,18 @@ $(document).ready(function() {
 
 #### attributes
 ```js
+// ดึงค่า attributes
+var title = $("em").attr("title");
+ $("#divid").text(title);
+ 
+ // set attributes
+ $("#myimg").attr("src", "images/dog2.jpg");
+ 
+ // ลบ attributes
+ $("table").removeAttr("border");
+
+```
+```js
 
     <div>
         <em title="Bold and BraveSSS">This is first paragraph.</em>
@@ -61,6 +73,7 @@ This is second paragraph.
 
 Bold and BraveSSS
 ```
+` เปลี่ยนรูป `
 ```
   <div>
         <img src="images/dog1.jpg" alt="Sample image" />
@@ -74,6 +87,33 @@ Bold and BraveSSS
         });
     </script>
   
+```
+` ลบ `
+```js
+    <table border="2">
+        <tr>
+            <td>This is first table</td>
+        </tr>
+    </table>
+
+    <table border="3">
+        <tr>
+            <td>This is second table</td>
+        </tr>
+    </table>
+
+    <table border="4">
+        <tr>
+            <td>This is third table</td>
+        </tr>
+    </table>
+    
+ <script type="text/javascript" language="javascript">
+        $(document).ready(function () {
+           $("table").removeAttr("border");
+        });
+    </script>
+
 ```
 # NEW
     51219.01 info=> arrow function
