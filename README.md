@@ -217,7 +217,16 @@ Bold and BraveSSS
   
   
   $("li").eq(0).find(".middle").addClass("selected");
+  
 ```
+## DOM
+```js
+replaceWith เปลี่ยนค่า
+  $("div").click(function () {
+                $(this).replaceWith("<h1>JQuery is Great</h1>");
+            });
+```
+
 # NEW
     51219.01 info=> arrow function
     51219.02 update readme show info
