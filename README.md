@@ -202,7 +202,7 @@ Bold and BraveSSS
 ```
 
 ## traversing
-```note
+```js
 // index เริ่ม 0 --> n   addClass ให้ตาม index
   ea(index)   
 
