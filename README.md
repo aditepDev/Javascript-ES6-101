@@ -203,10 +203,17 @@ Bold and BraveSSS
 
 ## traversing
 ```note
-// index เริ่ม 0 --> n
-ea(0)   
+// index เริ่ม 0 --> n   addClass ให้ตาม index
+  ea(index)   
 
  $("li").eq(0).addClass("selected");
+ 
+  filter(class)  หาว่า liตัวที่มี middel อยู่ที่ไหน แล้ว addClass ให้ li ตัวนั้น
+ $("li").filter(".middle").addClass("selected");
+ $("li.middle").addClass("selected");
+ 
+  find(class) หาว่า class นั้นอยู่ไหน ex. หา span ใน p แล้ว addClass ให้ span 
+  $("p").find("span").addClass("selected");
 ```
 # NEW
     51219.01 info=> arrow function
