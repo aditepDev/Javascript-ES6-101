@@ -9,6 +9,7 @@
 ## JQuery Method
 ![Artboard 1@2x](http://codewithme.us/dc/reveal.js/images/document-ready.png)
 ``` js
+ // $(selectors).method("parameter1","parameter2")
 $(document).ready(function() {
 // javascript code here!!
 });
@@ -19,7 +20,7 @@ $(document).ready(function() {
 
     <script type="text/javascript" language="javascript">
         $(document).ready(function(){
-
+            // $ (selectors).method("parameter1","parameter2")
             $('#div2,.small').css("background-color","blue");
             $('div.small span').css("background-color","red");
             $('.big').css("background-color","yellow");
