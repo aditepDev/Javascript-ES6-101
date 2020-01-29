@@ -187,6 +187,32 @@ var person1 = {
 person1.greet();
 
 ```
+
+### ` Modules `
+``` js
+// math.1.js
+const add = function(a,b) {
+return a + b;
+};
+
+module.exports = {add};
+
+##
+//  math.2.js
+module.exports.add = function(a,b) {
+return a + b;
+};
+
+var math1 = require("./math.1.js");
+var math2 = require("./math.2.js");
+
+// solution 1 : math1
+console.log("1|", math1.add(1, 2));
+
+// solution 2 : math2
+console.log("2|", math2.add(1, 2));
+
+```
 ## JQuery Method
 ![Artboard 1@2x](http://codewithme.us/dc/reveal.js/images/document-ready.png)
 ``` js
