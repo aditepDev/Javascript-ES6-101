@@ -116,11 +116,37 @@ console.log(s.color);
 console.log(s.area);
 
 ```
-## Object
+### ` Object `
 ```js
  let clone = Object.assign({},user);
-```
+ 
+const doBark = "bark";
+const dog = {
+    name : "Doggy",age:2 ,["bar"+"k"] : function(){
+        console.log("hong");
+    },doBark:function(){
+        console.log("hong");
 
+}};
+
+dog.bark();
+dog.doBark();
+```
+### ` function `
+
+```js 
+var greet1 = function (firstname , lastanme) {
+    return firstname + '' + lastanme
+}
+
+var greet2 = (firstname , lastanme) => {
+    return firstname+ ' ' + lastanme
+}
+
+var greet3 =  (firstname , lastanme) => firstname + ' ' + lastanme;
+console.log(greet3("aditep","campira"));
+
+```
 ## JQuery Method
 ![Artboard 1@2x](http://codewithme.us/dc/reveal.js/images/document-ready.png)
 ``` js
