@@ -49,7 +49,12 @@ var title = $("em").attr("title");
  
  // ลบ attributes
  $("table").removeAttr("border");
-
+ 
+ // addclass
+   $("em").addClass("selected");
+ 
+ // removeClass
+  $("p#pid1").removeClass("red");
 ```
 ```js
 
@@ -114,6 +119,51 @@ Bold and BraveSSS
         });
     </script>
 
+```
+` add class`
+```js
+    <style>
+        .selected {
+            color: red;
+        }
+        .highlight {
+            background: yellow;
+        }
+    </style>
+<body>
+    <em title="Bold and Brave">This is first paragraph.</em>
+    <p id="myid">This is second paragraph.</p>
+</body>
+ <script type="text/javascript" language="javascript">
+        $(document).ready(function () {
+            $("em").addClass("selected");
+            $("#myid").addClass("highlight");
+        });
+    </script>
+```
+`removeClass`
+```js
+    <style>
+        .red {
+            color: red;
+        }
+
+        .green {
+            color: green;
+        }
+    </style>
+
+
+<body>
+    <p class="red" id="pid1">This is first paragraph.</p>
+    <p class="green" id="pid2">This is second paragraph.</p>
+</body>
+ <script type="text/javascript" language="javascript">
+ $(document).ready(function () {
+          $("p#pid1").removeClass("red");
+          $("p#pid2").removeClass("green");
+ });
+    </script>
 ```
 # NEW
     51219.01 info=> arrow function
