@@ -61,6 +61,20 @@ This is second paragraph.
 
 Bold and BraveSSS
 ```
+```
+  <div>
+        <img src="images/dog1.jpg" alt="Sample image" />
+        <img id="myimg" src="images/dog1.jpg" alt="Sample image" />
+    </div>
+
+    <script type="text/javascript" language="javascript">
+        $(document).ready(function () {
+            
+            $("#myimg").attr("src", "images/dog2.jpg");
+        });
+    </script>
+  
+```
 # NEW
     51219.01 info=> arrow function
     51219.02 update readme show info
