@@ -169,7 +169,27 @@ Bold and BraveSSS
  });
     </script>
 ```
+##### `toggleClass `
+```js
+    <style>
+        .red {
+            color: red;
+        }
+    </style>
+    
+<body>
+    <p class="green">Click following line to see the result</p>
+    <p class="red" id="pid">This is first paragraph.</p>
+</body>
 
+<script>
+  $(document).ready(function () {
+            $("p#pid").click(function () {
+                $(this).toggleClass("red");
+            });
+        });
+    </script>
+```
 # NEW
     51219.01 info=> arrow function
     51219.02 update readme show info
