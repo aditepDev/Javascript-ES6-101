@@ -9,8 +9,32 @@
 ## JQuery Method
 ![Artboard 1@2x](http://codewithme.us/dc/reveal.js/images/document-ready.png)
 ``` js
+$(document).ready(function() {
+// javascript code here!!
+});
+    
+```
+####  selectors
+```js
 
+    <script type="text/javascript" language="javascript">
+        $(document).ready(function(){
 
+            $('#div2,.small').css("background-color","blue");
+            $('div.small span').css("background-color","red");
+            $('.big').css("background-color","yellow");
+        });
+    </script>
+
+    <div class="big" id="div1">
+        <p>This is first division of the DOM.</p>
+    </div>
+    <div class="medium" id="div2">
+        <p>This is second division of the DOM.</p>
+    </div>
+    <div class="small" id="div3">
+        <span>This is third division of the DOM</span>
+    </div>
 ```
 # NEW
     51219.01 info=> arrow function
