@@ -53,6 +53,67 @@ function howManyArgs(...args){
  function howManyArgs(...args){
     console.log(args.length);
 }
+```
+### ` Spread Operators `
+```js
+
+var obj1 = {foo : "bar" , x:42};
+var obj2 = {foo : "baz" , y:13};
+
+var clonedObj = {...obj1 ,...obj2} /// { foo: 'baz', x: 42, y: 13 }
+
+var {foo : foo2, x : x2 , y :y2} = clonedObj;
+console.log(foo2,x2,y2)  // baz 42 13
+```
+### `Class` 
+```js
+class Rectangle{    
+    constructor(height,width) {
+        this.height = height;
+        this.width = width;
+    }
+
+    get color(){
+        return this._color;
+    }
+    set color(c) {
+        this._color = c;
+    }
+
+    get area(){
+         return this.height * this.width;
+    }
+
+    static areas(obj) {
+        return obj.height * obj.width;
+    }
+
+}
+
+const r =  new Rectangle(100 , 50);
+
+console.log(r.height,r.width);
+r.color = "RED";
+console.log(r.color);
+
+// method
+console.log(`method ${r.area}`);
+console.log(`static method ${Rectangle.areas(r)}`)
+
+```
+### `inheritance `
+```js
+
+class square extends Rectangle {
+    constructor (width) {
+        super(width,width); 
+    }
+}
+
+const s =  new square(100);
+s._color = "Blue"
+console.log(s.color);
+console.log(s.area);
 
 ```
 ## Object
