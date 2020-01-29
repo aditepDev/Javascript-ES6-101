@@ -49,15 +49,7 @@ var title = $("em").attr("title");
  
  // ลบ attributes
  $("table").removeAttr("border");
- 
- // addclass
-   $("em").addClass("selected");
- 
- // removeClass
-  $("p#pid1").removeClass("red");
-  
-  // toggleClass (มีเอาออก-ไม่มีใส่เข้าไป)
-    $(this).toggleClass("red");
+
 ```
 ##### attributes
 ```js
@@ -123,6 +115,17 @@ Bold and BraveSSS
         });
     </script>
 
+```
+#### Class
+```
+ // addclass
+   $("em").addClass("selected");
+ 
+ // removeClass
+  $("p#pid1").removeClass("red");
+  
+  // toggleClass (มีเอาออก-ไม่มีใส่เข้าไป)
+    $(this).toggleClass("red");
 ```
 ##### ` add class`
 ```js
