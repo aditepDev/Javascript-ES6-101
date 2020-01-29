@@ -37,6 +37,30 @@ $(document).ready(function() {
         <span>This is third division of the DOM</span>
     </div>
 ```
+
+#### attributes
+```js
+
+    <div>
+        <em title="Bold and BraveSSS">This is first paragraph.</em>
+        <p id="myid"  >This is second paragraph.</p>
+        <div id="divid"></div>
+    </div>
+
+    <script type="text/javascript" language="javascript">
+        $(document).ready(function () {
+            var title = $("em").attr("title");
+            $("#divid").text(title);
+        });
+    </script>
+
+```
+```html
+This is first paragraph.
+This is second paragraph.
+
+Bold and BraveSSS
+```
 # NEW
     51219.01 info=> arrow function
     51219.02 update readme show info
