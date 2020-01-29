@@ -5,6 +5,13 @@
 ```js
  let clone = Object.assign({},user);
 ```
+
+## JQuery Method
+![Artboard 1@2x](http://codewithme.us/dc/reveal.js/images/jQuery.png)
+``` js
+
+
+```
 # NEW
     51219.01 info=> arrow function
     51219.02 update readme show info
