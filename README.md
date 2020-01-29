@@ -55,6 +55,9 @@ var title = $("em").attr("title");
  
  // removeClass
   $("p#pid1").removeClass("red");
+  
+  // toggleClass (มีเอาออก-ไม่มีใส่เข้าไป)
+    $(this).toggleClass("red");
 ```
 ```js
 
