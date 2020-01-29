@@ -147,6 +147,46 @@ var greet3 =  (firstname , lastanme) => firstname + ' ' + lastanme;
 console.log(greet3("aditep","campira"));
 
 ```
+
+### ` this `
+
+```js
+var person1 = {
+    name: "luna",
+
+    hasdlMessage: function (message, handler) {
+        handler(message);
+    },
+    greet : function() {
+        const _this = this;
+        this.hasdlMessage("Hi",function (message) {
+            console.log(message+ " " + _this.name)
+        });
+    }
+};
+
+person1.greet();
+
+```
+```js
+
+var person1 = {
+    name: "luna",
+
+    hasdlMessage: (message, handler)=>{
+        handler(message);
+    },
+    greet : function() {
+        
+        this.hasdlMessage("Hi",(message) =>{
+            console.log(message+ " " + this.name)
+        });
+    }
+};
+
+person1.greet();
+
+```
 ## JQuery Method
 ![Artboard 1@2x](http://codewithme.us/dc/reveal.js/images/document-ready.png)
 ``` js
