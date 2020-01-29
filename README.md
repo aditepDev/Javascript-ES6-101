@@ -255,7 +255,7 @@ replaceWith เปลี่ยนค่า
 
 ```
 #### ดึงข้อมูลมากำหนด
-``` 
+```js
 $.getJSON('result.1.json', function (jd) {
                     $('#stage').html('<p> Name: ' + jd.name + '</p>');
                     $('#stage').append('<p>Age : ' + jd.age + '</p>');
@@ -263,6 +263,8 @@ $.getJSON('result.1.json', function (jd) {
  });
 
 
+```
+``` 
 Name: Sara
 
 Age : 22
