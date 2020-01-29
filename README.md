@@ -59,6 +59,7 @@ var title = $("em").attr("title");
   // toggleClass (มีเอาออก-ไม่มีใส่เข้าไป)
     $(this).toggleClass("red");
 ```
+##### attributes
 ```js
 
     <div>
@@ -81,7 +82,7 @@ This is second paragraph.
 
 Bold and BraveSSS
 ```
-` เปลี่ยนรูป `
+##### ` เปลี่ยนรูป `
 ```
   <div>
         <img src="images/dog1.jpg" alt="Sample image" />
@@ -96,7 +97,7 @@ Bold and BraveSSS
     </script>
   
 ```
-` ลบ `
+##### ` ลบ `
 ```js
     <table border="2">
         <tr>
@@ -123,7 +124,7 @@ Bold and BraveSSS
     </script>
 
 ```
-` add class`
+##### ` add class`
 ```js
     <style>
         .selected {
@@ -144,7 +145,7 @@ Bold and BraveSSS
         });
     </script>
 ```
-`removeClass`
+##### `removeClass`
 ```js
     <style>
         .red {
@@ -168,6 +169,7 @@ Bold and BraveSSS
  });
     </script>
 ```
+
 # NEW
     51219.01 info=> arrow function
     51219.02 update readme show info
