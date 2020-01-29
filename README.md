@@ -7,7 +7,7 @@
 ```
 
 ## JQuery Method
-![Artboard 1@2x](http://codewithme.us/dc/reveal.js/images/jQuery.png)
+![Artboard 1@2x](http://codewithme.us/dc/reveal.js/images/document-ready.png)
 ``` js
 
 
