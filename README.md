@@ -1,6 +1,60 @@
 # Javascript-ES6-101-
 ![Artboard 1@2x](https://github.com/topkoka/Javascript-ES6-101-/blob/master/Ai%20info/2x/Artboard%201%402x.png)
 
+#ES6
+
+### `variable  `
+``` js
+var x = 10;   // global
+const y = {}; // แนะนำ  ค่าคงที่  
+let z = x;    //  แนะนำ
+```
+### ` Multi-line String & Expression interpolation `
+```js
+ใช้เครื่องหมาย "  `  "
+const fistname = 'Robot';
+const lastname = "asdgfh";
+const date = new Date();
+const great = `hello ${fistname + '' + lastname},how are you ${date}`;
+
+```
+### ` Destructuring Assignment &  Array Destructuring `
+```js
+const arr = [1,2];
+
+### แบบเก่า ###
+const a = arr[0]; 
+const b = arr[1];
+
+### แบบใหม่ ###
+const [c,d] = arr;
+
+const oneToFive = [1,2,3,4,5];
+const [a1,b1,c1] = oneToFive;
+const [a2,b2, ...rest]  = oneToFive;
+
+///  ...rest  = 3 4 5
+```
+###  ` Rest parameters ` 
+```js
+/// "...parameters"
+
+const oneToFive = [1,2,3,4,5];
+const [a1,b1,c1] = oneToFive;
+console.log(c1)
+const [a2,b2, ...rest]  = oneToFive;
+
+function howManyArgs(...args){
+    console.log(args.length);
+ }
+
+
+ let clone = Object.assign({},user);
+ function howManyArgs(...args){
+    console.log(args.length);
+}
+
+```
 ## Object
 ```js
  let clone = Object.assign({},user);
