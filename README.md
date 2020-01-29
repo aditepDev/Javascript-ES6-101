@@ -15,7 +15,7 @@ $(document).ready(function() {
 });
     
 ```
-####  selectors
+##  selectors
 ```js
 
     <script type="text/javascript" language="javascript">
@@ -38,7 +38,7 @@ $(document).ready(function() {
     </div>
 ```
 
-#### attributes
+## attributes
 ```js
 // ดึงค่า attributes
 var title = $("em").attr("title");
@@ -51,7 +51,6 @@ var title = $("em").attr("title");
  $("table").removeAttr("border");
 
 ```
-##### attributes
 ```js
 
     <div>
@@ -74,7 +73,7 @@ This is second paragraph.
 
 Bold and BraveSSS
 ```
-##### ` เปลี่ยนรูป `
+### ` เปลี่ยนรูป `
 ```
   <div>
         <img src="images/dog1.jpg" alt="Sample image" />
@@ -89,7 +88,7 @@ Bold and BraveSSS
     </script>
   
 ```
-##### ` ลบ `
+### ` ลบ `
 ```js
     <table border="2">
         <tr>
@@ -116,7 +115,7 @@ Bold and BraveSSS
     </script>
 
 ```
-#### Class
+## Class
 ```
  // addclass
    $("em").addClass("selected");
@@ -127,7 +126,7 @@ Bold and BraveSSS
   // toggleClass (มีเอาออก-ไม่มีใส่เข้าไป)
     $(this).toggleClass("red");
 ```
-##### ` add class`
+### ` add class`
 ```js
     <style>
         .selected {
@@ -148,7 +147,7 @@ Bold and BraveSSS
         });
     </script>
 ```
-##### `removeClass`
+### `removeClass`
 ```js
     <style>
         .red {
@@ -172,7 +171,7 @@ Bold and BraveSSS
  });
     </script>
 ```
-##### `toggleClass `
+### `toggleClass `
 ```js
     <style>
         .red {
@@ -192,6 +191,22 @@ Bold and BraveSSS
             });
         });
     </script>
+```
+## Contents( ดึงค่า)
+```
+//   .text()  .html()  .val();
+
+ var content = $("p").html();
+            $("#pid2").html(content);
+// .hasClass() เช็คว่ามี   class นั้นรึป่าว return : true/false           
+```
+
+## traversing
+```note
+// index เริ่ม 0 --> n
+ea(0)   
+
+ $("li").eq(0).addClass("selected");
 ```
 # NEW
     51219.01 info=> arrow function
