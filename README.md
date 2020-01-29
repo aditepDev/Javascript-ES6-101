@@ -230,7 +230,70 @@ replaceWith เปลี่ยนค่า
  $(this).before('<div class="div"></div>');            
  $(this).after('<div class="div"></div>');
 ```
+## Events
+```js
+  $(document).ready(function () {
+            // 1
+            $('div').mousedown(function(event) {
+                console.log('Hi there1!');
+            });
+            // 2
+            $('div').bind('mouseout', function (event) {
+                console.log('Hi there2!');
+            });
+        });
 
+```
+
+## Ajax
+```ajax
+// load
+ $('#stage').load('result.html');
+ 
+ 
+ 
+
+```
+#### ดึงข้อมูลมากำหนด
+``` 
+$.getJSON('result.1.json', function (jd) {
+                    $('#stage').html('<p> Name: ' + jd.name + '</p>');
+                    $('#stage').append('<p>Age : ' + jd.age + '</p>');
+                    $('#stage').append('<p> Sex: ' + jd.sex + '</p>');
+ });
+
+
+Name: Sara
+
+Age : 22
+
+Sex: female
+```
+```js
+ $("#driver").click(function (event) {
+                $.getJSON('result.2.json', function (data) {
+                    data.forEach(element =>  {
+                        $('#stage').append('<p> Name: ' + element.name + '</p>');
+                        $('#stage').append('<p>Age : ' + element.age + '</p>');
+                        $('#stage').append('<p> Sex: ' + element.sex + '</p>');
+                    });
+                });
+            });
+```
+```
+STAGE
+Name: Sara
+
+Age : 22
+
+Sex: female
+
+Name: John
+
+Age : 25
+
+Sex: male
+```
 # NEW
     51219.01 info=> arrow function
     51219.02 update readme show info
