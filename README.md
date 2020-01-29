@@ -221,10 +221,14 @@ Bold and BraveSSS
 ```
 ## DOM
 ```js
+
 replaceWith เปลี่ยนค่า
   $("div").click(function () {
                 $(this).replaceWith("<h1>JQuery is Great</h1>");
             });
+ $('div#div3').remove();        
+ $(this).before('<div class="div"></div>');            
+ $(this).after('<div class="div"></div>');
 ```
 
 # NEW
